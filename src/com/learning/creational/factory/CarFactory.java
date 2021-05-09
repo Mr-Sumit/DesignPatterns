@@ -1,7 +1,8 @@
 package com.learning.creational.factory;
 
 public class CarFactory {
-	public static ICar getCar(String modelName){
+	
+	public ICar getCar(String modelName){
 		ICar car = null;
 		switch (modelName){
 		case "Sedan": 
@@ -15,8 +16,3 @@ public class CarFactory {
 	}
 }
 
-class TestCarFactory{
-	public static void main(String[] args){
-		CarFactory.getCar("Sedan").modelName();
-	}
-}
